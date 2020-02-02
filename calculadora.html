@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <link href="style.css" rel="stylesheet">
+  <title>Calculadora de Churrasco</title>
+  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+    alert ("Antes de mais nada: ótimo churrasco! :)");
+</SCRIPT>
+
+<script type="text/javascript">
+  function somarValores(){
+        var mulher = document.getElementById("qtdmulher").value;
+        var homem = document.getElementById("qtdhomem").value;
+        var crianca = document.getElementById("qtdcrianca").value;
+        var carne = document.getElementById("qtdcarne").value;
+        var alcool = document.getElementById("qtdalcool").value;
+        var totalmulher = mulher * 300;
+        var totalhomem = homem*400;
+        var totalcrianca = crianca*150;
+        var totalcarne = parseInt(totalmulher) + parseInt(totalhomem) + parseInt(totalcrianca);
+        var totalcarneportipo = totalcarne/carne;
+        var totalalcool = alcool*5;
+        alert("Comprar " +totalcarneportipo + " de cada tipo de carne");
+        alert("Comprar " + totalalcool+ " cerveja");
+
+
+    }
+</script>
+</head>
+<body>
+  <div align="center"> 
+    <h1>Quer saber quanto comprar para o churrasco?</h1>
+    </div>
+    <form align="center" action="" method="post">
+        <label>Quantidade de mulheres:</label>
+        <input id="qtdmulher" type="number"/>
+        <br><br>
+        <label>Quantidade de homens:</label>
+        <input id="qtdhomem" type="number"/>
+        <br><br>
+        <label>Quantidade de crianças:</label>
+        <input id="qtdcrianca" type="number"/>
+        <br><br>
+        <label>Quantidade de tipos de carne:</label>
+        <input id="qtdcarne" type="number"/>
+        <br><br>
+        <label>Quantidade de pessoas que ingerem álcool:</label>
+        <input id="qtdalcool" type="number"/>
+        <br><br>
+        <button id="somar" onclick="somarValores()">Calcular</button>
+  
+  </form>
+</body>
+</html>
