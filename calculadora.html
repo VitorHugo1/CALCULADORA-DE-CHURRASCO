@@ -5,26 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
   <link href="style.css" rel="stylesheet">
-  <title>Calculadora de Churrasco</title>
-  <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-    alert ("Antes de mais nada: ótimo churrasco! :)");
-</SCRIPT>
+  <title class="text1">Calculadora de Churrasco</title>
+  
 
 <script type="text/javascript">
   function somarValores(){
         var mulher = document.getElementById("qtdmulher").value;
         var homem = document.getElementById("qtdhomem").value;
         var crianca = document.getElementById("qtdcrianca").value;
-        var carne = document.getElementById("qtdcarne").value;
         var alcool = document.getElementById("qtdalcool").value;
-        var totalmulher = mulher * 300;
-        var totalhomem = homem*400;
-        var totalcrianca = crianca*150;
+        var totalmulher = mulher * 0.4;
+        var totalhomem = homem*0.4;
+        var totalcrianca = crianca*0.4;
+		var litroalcool = 1
         var totalcarne = parseInt(totalmulher) + parseInt(totalhomem) + parseInt(totalcrianca);
-        var totalcarneportipo = totalcarne/carne;
-        var totalalcool = alcool*5;
-        alert("Comprar " +totalcarneportipo + " de cada tipo de carne");
-        alert("Comprar " + totalalcool+ " cerveja");
+        var totalalcool = alcool* litroalcool;
+        alert("Comprar " +totalcarne + "Kg"+" de cada tipo de carne");
+        alert("Comprar " + totalalcool+ "litro(s) de cerveja");
 
 
     }
@@ -44,9 +41,7 @@
         <label>Quantidade de crianças:</label>
         <input id="qtdcrianca" type="number"/>
         <br><br>
-        <label>Quantidade de tipos de carne:</label>
-        <input id="qtdcarne" type="number"/>
-        <br><br>
+		
         <label>Quantidade de pessoas que ingerem álcool:</label>
         <input id="qtdalcool" type="number"/>
         <br><br>
